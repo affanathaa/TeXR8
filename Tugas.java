@@ -1,19 +1,22 @@
 import java.util.Scanner;
 
 public class Tugas {
-    
+
     public static void main(String[] args) {
         
-        int diagonal1,diagonal2;
-        Scanner input = new Scanner(System.in);
-        System.out.println("Masukkan diagonal1 layang layang: ");
-        diagonal1 = input.nextInt();
-        System.out.println("Masukkan diagonal2 layang layang: ");
-        diagonal2 = input.nextInt();
-        double Konstanta= 0.5;      
-        double hasil = diagonal1*diagonal2*Konstanta;
-        System.out.println("Hasil luas layang layang adalah: "+hasil);
-
-    }
-    
+        double hargaBarang,Diskon,jumlahBarang;
+        Scanner Input = new Scanner(System.in);
+        double hasil_akhir;
+        System.out.println(" Masukkam Harga Barang ");
+        hargaBarang = Input.nextDouble();
+        System.out.println("masukkan Jumlah Barang");
+        jumlahBarang = Input.nextDouble();
+        System.out.println("Masukkan Diskon");
+        Diskon = Input.nextDouble();
+        Double totalharga;
+        totalharga= hargaBarang * jumlahBarang;
+        Diskon = Diskon / 100 * totalharga;
+        hasil_akhir = totalharga - Diskon;
+        System.out.println("Total harganya adalah"+hasil_akhir);
+        }
 }
